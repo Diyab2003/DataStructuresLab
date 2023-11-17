@@ -15,7 +15,7 @@ void main()
 {
 int ch;
 do{
-  printf("Enter the choice\n1)insert at front\t2)insert at end \t3)insert at any position\n4)delete at front\t5)delete at end\t6)delete at any position\t7)display\t8)exit\n");
+  printf("Enter the choice\n1)Insert at front\t2)Insert at end \t3)Insert at any position\n4)Delete at front\t5)Delete at end\t6)Delete at any position\t7)Display\t8)Exit\n");
   scanf("%d",&ch);
   switch(ch){
     case 1:{
@@ -96,7 +96,7 @@ void insertion_at_any_position(){
    printf("Enter the data to be added\n");
    scanf("%d",&item);
    temp=(struct node*)malloc(sizeof(struct node));
-   printf("Enter the positon after which value to added\n");
+   printf("Enter the value after which data is to be added\n");
    scanf("%d",&key);
    ptr=head;
    while(ptr->data!=key&&ptr->link!=NULL){
